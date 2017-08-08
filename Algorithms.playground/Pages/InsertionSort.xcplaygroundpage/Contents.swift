@@ -59,4 +59,6 @@ func insertionSort_descending (on array:[Int]) -> [Int] {
 
 let sortedArray_asc = insertionSort_ascending(on: [31,41,59,26,41,58])
 let sortedArray_des = insertionSort_descending(on: [31,41,59,26,41,58])
+
+//Hence this is one of the best thing happened to me.
 //: [Next](@next)

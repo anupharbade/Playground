@@ -48,7 +48,7 @@ print(str[str.index(str.startIndex, offsetBy: 4)])
 //!Very useful. When you don't know the length of the string and you don't want app to crash.
 let validIndex = str.index(str.startIndex, offsetBy: 28, limitedBy: str.endIndex)
 
-if let validIndex = validIndex {
+if validIndex != nil {
     print("Valid index")
 } else {
     print("Invalid index")
