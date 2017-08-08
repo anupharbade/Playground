@@ -42,4 +42,29 @@ headTo(direction)
 direction = .east
 headTo(direction)
 
+// Associated values
+
+// enables to store additional custom information(associated values) for an enum case.
+enum Shape {
+    case rectangle(Int, Int)
+    case circle(Float)
+}
+
+func dimensionFor(_ shape:Shape) {
+    switch shape {
+    case let .rectangle(length, bredth):
+        print("Rectangle is of \(length)*\(bredth) dimensions")
+    case let .circle(radius):
+        print("Circle is of \(radius)")
+    }
+}
+
+// shape is a rectangle with the length and bredth provided as an associated value to it.
+var shape = Shape.rectangle(4, 2)
+dimensionFor(shape)
+// shape is changed to circle and the associated value is given as 5.0 which is the radius of the Circle shape.
+shape = Shape.circle(5.0)
+dimensionFor(shape)
+
+
 //: [Next](@next)
